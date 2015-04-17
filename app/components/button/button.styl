@@ -1,0 +1,22 @@
+.button {
+    button();
+
+    &_theme_pseudo {
+        button_skin_pseudo(36px);
+    }
+
+    &_theme_pseudo&_arrow_left {
+        button_skin_arrow('left', 36px, #f6f5f3);
+    }
+
+    &_theme_play {
+        button_skin_action();
+        button_skin_arrow('right', 36px, #fedd61);
+
+        padding: 0 12px;
+    }
+
+    &_disabled {
+        opacity: 0.6;
+    }
+}

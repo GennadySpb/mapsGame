@@ -1,0 +1,33 @@
+.spinner {
+    display: none;
+
+    box-sizing: border-box;
+
+    border: 2px solid transparent;
+    border-radius: 150px; /* На android 2.3 border-radius в % не поддерживается */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+
+    /* Для правильного позиционирования прелоадера относительно baseline */
+    &:after {
+        visibility: hidden;
+
+        content: '\00A0'; /* &nbsp; */
+    }
+
+    &_size_xl {
+        width: 102px;
+        height: 102px;
+
+        font-size: 18px;
+        line-height: 34px;
+
+        border-width: 3px;
+    }
+
+    &_progress {
+        display: inline-block;
+
+        animation: islands-spin 1s linear infinite;
+        backface-visibility: hidden; /* Для ускорения анимации */
+    }
+}

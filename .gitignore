@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+atlassian-ide-plugin.xml
+npm-debug.log
+node_modules
+*.log
+app/vendors/*
+app/build/*

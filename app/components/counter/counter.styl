@@ -1,0 +1,41 @@
+.counter {
+    font-size: 20px
+    line-height: 80px;
+
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    text-shadow: 0 1px 0 #fff;
+
+    width: 80px;
+    height: 80px;
+
+    text-align: center;
+    background: rgba(255,200,0, .8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid #999;
+
+    &__wrapper {
+        position: relative;
+        height: 80px;
+        width: 80px;
+
+        user-select: none;
+
+        overflow: hidden;
+    }
+
+    &__count {
+        transform: translate3d(0, -10px, 0);
+        opacity: 0;
+
+        animation: title-show 1s ease-out both;
+    }
+
+    &__count_toggle {
+        animation-name: title-show2;
+    }
+
+    disabled()
+}

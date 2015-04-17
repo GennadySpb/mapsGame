@@ -1,0 +1,27 @@
+button_skin_arrow($direction, $buttonHeight, $color) {
+    position: relative;
+
+    $obj = {
+        left: 'right',
+        right: 'left'
+    }
+
+    $direction = $obj[$direction];
+
+    &:after {
+        position: absolute;
+        top: 0;
+        {$direction}: 100%;
+
+        width: 0;
+        height: 0;
+        margin-{$direction}: -1px;
+
+        content: '';
+
+        border-top: ($buttonHeight/2) solid rgba(255,255,255,.0);
+        border-{$direction}: ($buttonHeight/2 - 10) solid $color;
+        border-bottom: ($buttonHeight/2) solid rgba(255,255,255,.0);
+        border-radius: inherit;
+    }
+}

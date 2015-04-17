@@ -1,0 +1,43 @@
+.launcher {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 300px;
+    margin: 12px 0 0 200px;
+
+    transition: all 1s;
+    transform-style: preserve-3d;
+    opacity: 1;
+
+    &__title {
+        font-size: 18px;
+
+        margin: 0 0 12px 0;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    &__main,
+    &__back {
+        position: absolute;
+
+        backface-visibility: hidden;
+
+        island();
+        transform: translateZ(1px);
+    }
+
+    &__back {
+        transform: translateZ(-1px) rotateY(-180deg);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_rules {
+        transform: rotateY(180deg);
+    }
+}
