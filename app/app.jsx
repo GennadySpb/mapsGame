@@ -12,6 +12,7 @@ var LauncherView = require('./components/launcher/Launcher');
 var CounterView = require('./components/counter/Counter');
 var HintView = require('./components/hint/Hint');
 var ListView = require('./components/list/List');
+var TimerView = require('./components/timer/Timer');
 var ResultView = require('./components/result/Result');
 
 var dispatcher = require('./utils/dispatcher');
@@ -48,7 +49,8 @@ var App = React.createClass({
         return [
             <CounterView disabled={this.state.gameOver} />,
             <ListView disabled={this.state.gameOver} />,
-            <HintView disabled={this.state.gameOver} />
+            <HintView disabled={this.state.gameOver} />,
+            <TimerView disabled={this.state.gameOver} />
         ]
     },
 

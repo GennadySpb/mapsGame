@@ -1,0 +1,660 @@
+
+/* line 15 : /Users/twin/Sites/3dscheme/build/main.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+
+/* line 286 : /Users/twin/Sites/3dscheme/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+
+/* line 4 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-moz-keyframes islands-spin {
+
+/* line 5 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  from {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(0deg);
+  }
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(360deg);
+  }
+}
+
+/* line 4 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-webkit-keyframes islands-spin {
+
+/* line 5 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  from {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(0deg);
+  }
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(360deg);
+  }
+}
+
+/* line 4 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-o-keyframes islands-spin {
+
+/* line 5 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  from {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(0deg);
+  }
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(360deg);
+  }
+}
+
+/* line 4 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@keyframes islands-spin {
+
+/* line 5 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  from {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(0deg);
+  }
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    border-top-color: #fc0;
+    border-left-color: #fc0;
+    transform: rotate(360deg);
+  }
+}
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-moz-keyframes title-show {
+
+/* line 23 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-webkit-keyframes title-show {
+
+/* line 23 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-o-keyframes title-show {
+
+/* line 23 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@keyframes title-show {
+
+/* line 23 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-moz-keyframes title-show2 {
+
+/* line 30 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-webkit-keyframes title-show2 {
+
+/* line 30 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-o-keyframes title-show2 {
+
+/* line 30 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@keyframes title-show2 {
+
+/* line 30 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-moz-keyframes request {
+
+/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    transform: translate3d(100%, 0, 0) scale(0.99);
+  }
+}
+
+/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-webkit-keyframes request {
+
+/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    transform: translate3d(100%, 0, 0) scale(0.99);
+  }
+}
+
+/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@-o-keyframes request {
+
+/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    transform: translate3d(100%, 0, 0) scale(0.99);
+  }
+}
+
+/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+@keyframes request {
+
+/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+  to {
+    transform: translate3d(100%, 0, 0) scale(0.99);
+  }
+}
+
+/* line 40 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+
+/* line 48 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+
+/* line 48 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+.game {
+  font: normal 14px/1.5em Helvetica Neue, Arial, sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+/* line 16 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+#map {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 28 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_action.styl */
+
+/* line 18 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_action.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_arrow.styl */
+
+/* line 27 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_arrow.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_pseudo.styl */
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_pseudo.styl */
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+.button {
+  font-family: textbook, "Helvetica Neue", Helvetica, Arial;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* line 30 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+.button:focus {
+  outline: none;
+}
+
+/* line 4 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+.button_theme_pseudo {
+  position: relative;
+  font-size: 22px;
+  line-height: 36px;
+  padding: 0 14px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #202021;
+  text-shadow: -1px 1px 1px #fff;
+  background: #f6f5f3;
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px 1px #f3f3f1;
+}
+
+/* line 19 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_pseudo.styl */
+.button_theme_pseudo:first-child {
+  margin-left: 0;
+}
+
+/* line 8 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+.button_theme_pseudo.button_arrow_left {
+  position: relative;
+}
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_arrow.styl */
+.button_theme_pseudo.button_arrow_left:after {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 0;
+  height: 0;
+  margin-right: -1px;
+  content: '';
+  border-top: 18px solid rgba(255,255,255,0);
+  border-right: 8px solid #f6f5f3;
+  border-bottom: 18px solid rgba(255,255,255,0);
+  border-radius: inherit;
+}
+
+/* line 12 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+.button_theme_play {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fedd61;
+  transition: background 0.3s ease-in;
+  border-radius: 6px;
+  position: relative;
+  padding: 0 12px;
+}
+
+/* line 15 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_action.styl */
+.button_theme_play:active {
+  background: #fd0;
+}
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_arrow.styl */
+.button_theme_play:after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -1px;
+  content: '';
+  border-top: 18px solid rgba(255,255,255,0);
+  border-left: 8px solid #fedd61;
+  border-bottom: 18px solid rgba(255,255,255,0);
+  border-radius: inherit;
+}
+
+/* line 19 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+.button_disabled {
+  opacity: 0.6;
+}
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/components/button/button.styl */
+
+/* line 22 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+.counter {
+  font-size: 20px;
+  line-height: 80px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  text-shadow: 0 1px 0 #fff;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background: rgba(255,200,0,0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  border: 1px solid #999;
+}
+
+/* line 19 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+.counter__wrapper {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* line 29 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+.counter__count {
+  transform: translate3d(0, -10px, 0);
+  opacity: 0;
+  animation: title-show 1s ease-out both;
+}
+
+/* line 36 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+.counter__count_toggle {
+  animation-name: title-show2;
+}
+
+/* line 45 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+.counter_disabled {
+  opacity: 0.4;
+}
+
+/* line 41 : /Users/twin/Sites/3dscheme/app/components/counter/counter.styl */
+
+/* line 41 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
+.hint {
+  font-size: 20px;
+  line-height: 40px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  text-shadow: 0 1px 0 #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #ffc800;
+  border-radius: 50%;
+  border: 1px solid #999;
+  cursor: pointer;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* line 24 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
+.hint:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  content: 'x';
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  border: 1px solid #999;
+}
+
+/* line 42 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
+.hint_actived {
+  transform: rotateY(180deg);
+}
+
+/* line 45 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+.hint_disabled {
+  opacity: 0.4;
+}
+
+/* line 47 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
+
+/* line 47 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  margin: 12px 0 0 200px;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  opacity: 1;
+}
+
+/* line 13 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher__title {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 21 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher__main,
+.launcher__back {
+  position: absolute;
+  backface-visibility: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 12px;
+  transform: translateZ(1px);
+}
+
+/* line 31 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher__back {
+  transform: translateZ(-1px) rotateY(-180deg);
+}
+
+/* line 35 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 40 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+.launcher_rules {
+  transform: rotateY(180deg);
+}
+
+/* line 43 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+
+/* line 43 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list {
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  transform: translateY(0);
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+/* line 13 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list__wrapper {
+  position: relative;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* line 19 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list__wrapper:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 100%);
+}
+
+/* line 34 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list__items,
+.list__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 41 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list__item {
+  height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #888;
+  user-select: none;
+}
+
+/* line 50 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list__item:first-child {
+  font-weight: bold;
+  color: #000;
+}
+
+/* line 57 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+.list_hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* line 61 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+
+/* line 61 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
+.loader {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+/* line 7 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
+
+/* line 7 : /Users/twin/Sites/3dscheme/app/components/result/result.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/result/result.styl */
+.result {
+  font-size: 28px;
+  line-height: 360px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-shadow: 0 1px 0 #fff;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: #fc0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* line 18 : /Users/twin/Sites/3dscheme/app/components/result/result.styl */
+
+/* line 18 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+.spinner {
+  display: none;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 150px; /* На android 2.3 border-radius в % не поддерживается */
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));
+/* Для правильного позиционирования прелоадера относительно baseline */
+}
+
+/* line 11 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+.spinner:after {
+  visibility: hidden;
+  content: '\00A0'; /* &nbsp; */
+}
+
+/* line 17 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+.spinner_size_xl {
+  width: 102px;
+  height: 102px;
+  font-size: 18px;
+  line-height: 34px;
+  border-width: 3px;
+}
+
+/* line 27 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+.spinner_progress {
+  display: inline-block;
+  animation: islands-spin 1s linear infinite;
+  backface-visibility: hidden; /* Для ускорения анимации */
+}
+
+/* line 33 : /Users/twin/Sites/3dscheme/app/components/spinner/spinner.styl */
+
+/* line 33 : /Users/twin/Sites/3dscheme/app/components/timer/timer.styl */
+
+/* line 1 : /Users/twin/Sites/3dscheme/app/components/timer/timer.styl */
+.timer {
+  font-size: 16px;
+  line-height: 50px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  text-shadow: 0 1px 0 #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  border: 1px solid #999;
+}
+
+/* line 45 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
+.timer_disabled {
+  opacity: 0.4;
+}

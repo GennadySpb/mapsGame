@@ -41,7 +41,11 @@ module.exports = {
         dispatcher.trigger('showResult', data);
     },
 
-    pointsUpdated: function (points) {
-        dispatcher.trigger('pointsUpdated', points);
+    updatePoints: function (points) {
+        dispatcher.trigger('updatePoints', points);
+    },
+
+    timeout: function () {
+        dispatcher.trigger('timeout');
     }
 };

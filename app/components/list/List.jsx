@@ -9,6 +9,16 @@ var dispatcher = require('../../utils/dispatcher');
  * @type {*|Function}
  */
 var List = React.createClass({
+    getDefaultProps: function () {
+        return {
+            disabled: false
+        };
+    },
+
+    propTypes: {
+        disabled: React.PropTypes.bool
+    },
+
     getInitialState: function () {
         return {
             geoObjects: []
@@ -27,7 +37,7 @@ var List = React.createClass({
 
     render: function () {
         return (
-            <div className={b({hide: !this.state.geoObjects.length})}>
+            <div className={b({hide: !this.state.geoObjects.length || this.props.disabled})}>
                 <div className={b('wrapper')}>
                     <ul className={b('items')}>
                         {this.state.geoObjects.map(function (geo, index) {

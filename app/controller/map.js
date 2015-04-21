@@ -166,6 +166,11 @@ _.extend(MyMap.prototype, {
         this._removeHintOnTimeout(hintObject);
     },
 
+    /**
+     * Удалаяем подсказку спустя время
+     * @param hintObject
+     * @private
+     */
     _removeHintOnTimeout: function (hintObject) {
         var self = this;
 

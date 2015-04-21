@@ -32,7 +32,7 @@ module.exports = function (grunt) {
             },
             vendor: {
                 src: [],
-                dest: 'app/build/vendors.js',
+                dest: 'build/vendors.js',
                 options: {
                     browserifyOptions: {
                         ignoreMissing: true // promise-attempt/lib-cov
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
             },
             client: {
                 files: {
-                    'app/build/main.built.js': ['app/app.jsx']
+                    'build/main.built.js': ['app/app.jsx']
                 },
                 options: {
                     debug: true,
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
             },
             vendorTest: {
                 src: [],
-                dest: 'app/build/vendorTest.js',
+                dest: 'build/vendorTest.js',
                 options: {
                     browserifyOptions: {
                         ignoreMissing: true // promise-attempt/lib-cov
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
             },
             test: {
                 files: {
-                    'app/build/test.built.js': ['app/tests/index.js']
+                    'build/test.built.js': ['app/tests/index.js']
                 },
                 options: {
                     external: vendorsTest,
@@ -79,12 +79,12 @@ module.exports = function (grunt) {
         concat: {
             options: {
                 process: function (src, filepath) {
-                    return '@import "../' + filepath.replace('app/', '') + '";';
+                    return '@import "../' + filepath + '";';
                 }
             },
             main: {
                 files: {
-                    'app/build/main.styl': ['app/styles/*.styl', 'app/components/**/*.styl']
+                    'build/main.styl': ['app/styles/*.styl', 'app/components/**/*.styl']
                 }
             }
         },
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
             },
             main: {
                 files: {
-                    'app/build/main.css': ['app/build/main.styl']
+                    'build/main.css': ['build/main.styl']
                 }
             }
         },
@@ -116,15 +116,15 @@ module.exports = function (grunt) {
             },
             main: {
                 files: {
-                    'app/build/_main.css': ['app/build/main.css']
+                    'build/_main.css': ['build/main.css']
                 }
             }
         },
 
         borschik: {
             css: {
-                src: ['app/build/_main.css'],
-                dest: 'app/build/_main.min.css',
+                src: ['build/_main.css'],
+                dest: 'build/_main.min.css',
                 options: {
                     minimize: true,
                     freeze: true,
@@ -132,7 +132,7 @@ module.exports = function (grunt) {
                 }
             },
             js: {
-                src: ['app/build/main.built.js', 'app/build/vendors.js'],
+                src: ['build/main.built.js', 'build/vendors.js'],
                 options: {
                     minimize: true,
                     freeze: false
@@ -143,20 +143,20 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: false, src: ['app/build/_main.css'], dest: 'app/build/_main.min.css'},
-                    {expand: false, src: ['app/build/main.built.js'], dest: 'app/build/_main.built.js'},
-                    {expand: false, src: ['app/build/vendors.js'], dest: 'app/build/_vendors.js'}
+                    {expand: false, src: ['build/_main.css'], dest: 'build/_main.min.css'},
+                    {expand: false, src: ['build/main.built.js'], dest: 'build/_main.built.js'},
+                    {expand: false, src: ['build/vendors.js'], dest: 'build/_vendors.js'}
                 ]
             }
         },
 
         watch: {
             client: {
-                files: ['app/**/*.js', 'app/**/*.jsx', '!app/build/*'],
+                files: ['app/**/*.js', 'app/**/*.jsx'],
                 tasks: ['browserify:client', 'copy']
             },
             test: {
-                files: ['app/**/*.js', 'app/**/*.jsx', '!app/build/*', 'app/tests/*.js', 'app/tests/**/*.jsx'],
+                files: ['app/**/*.js', 'app/**/*.jsx', 'app/tests/*.js', 'app/tests/**/*.jsx'],
                 tasks: ['browserify:test']
             },
             css: {

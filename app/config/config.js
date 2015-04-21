@@ -6,12 +6,16 @@ module.exports = {
         behaviors: ['drag']
     },
 
-    // Цена за подсказку
+    // Подсказка
     hint: {
-        price: -300, // point
+        price: -250, // point
         lifeTime: 5000, // ms
         countDown: 3000 // ms
     },
 
-    point: 100
+    // Очки за верный ответ
+    point: 100,
+
+    // Время игры
+    timer: 2 * 60 * 1000
 };

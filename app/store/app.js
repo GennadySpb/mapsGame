@@ -1,6 +1,7 @@
 var dispatcher = require('../utils/dispatcher');
 var AppActions = require('../actions/AppActions');
 
+// Маленькая моделька - очки пользователя
 var store = {
     points: 0,
 
@@ -8,10 +9,10 @@ var store = {
         dispatcher.on('addPoints hint', function (point) {
             this.points += point;
 
-            AppActions.pointsUpdated(this.points);
+            AppActions.updatePoints(this.points);
         }, this);
 
-        dispatcher.on('endGame', function () {
+        dispatcher.on('endGame timeout', function () {
             // TODO: добавить статистику
             AppActions.showResult({
                 points: this.points

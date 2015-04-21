@@ -27,7 +27,7 @@ var Counter = React.createClass({
     },
 
     componentDidMount: function () {
-        dispatcher.on('pointsUpdated', this._updateCount, this);
+        dispatcher.on('updatePoints', this._updateCount, this);
     },
 
     /**
