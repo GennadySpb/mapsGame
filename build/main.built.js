@@ -34,18 +34,33 @@ module.exports = {
         dispatcher.trigger('hint', cost);
     },
 
+    /**
+     * Конец игры
+     */
     endGame: function () {
         dispatcher.trigger('endGame');
     },
 
+    /**
+     * Показываем результат игры
+     * @param {Object} data
+     */
     showResult: function (data) {
         dispatcher.trigger('showResult', data);
     },
 
+    /**
+     * Обновляем очки
+     *
+     * @param {Number} points
+     */
     updatePoints: function (points) {
         dispatcher.trigger('updatePoints', points);
     },
 
+    /**
+     * Время игры кончилось
+     */
     timeout: function () {
         dispatcher.trigger('timeout');
     }
@@ -83,9 +98,9 @@ var App = React.createClass({displayName: "App",
 
     render: function () {
         return (
-            React.createElement("div", {className: b_('wrapper')},
-                this._renderGame(),
-                this._renderLauncher(),
+            React.createElement("div", {className: b_('wrapper')}, 
+                this._renderGame(), 
+                this._renderLauncher(), 
                 this._renderEnd()
             )
         );
@@ -276,8 +291,8 @@ var Counter = React.createClass({displayName: "Counter",
 
     render: function () {
         return (
-            React.createElement("div", {className: b({disabled: this.props.disabled})},
-                React.createElement("div", {className: b('wrapper')},
+            React.createElement("div", {className: b({disabled: this.props.disabled})}, 
+                React.createElement("div", {className: b('wrapper')}, 
                     React.createElement("div", {className: b('count', {toggle: this._toggle})}, this.state.count)
                 )
             )
@@ -323,8 +338,8 @@ var Hint = React.createClass({displayName: "Hint",
 
     render: function () {
         return (
-            React.createElement("div", {className: b({actived: this.state.actived, disabled: this.props.disabled}), onClick: this.getHint},
-                React.createElement("div", {className: b('wrapper')},
+            React.createElement("div", {className: b({actived: this.state.actived, disabled: this.props.disabled}), onClick: this.getHint}, 
+                React.createElement("div", {className: b('wrapper')}, 
                     "?"
                 )
             )
@@ -354,6 +369,8 @@ module.exports = Hint;
 var React = require('react');
 var _ = require('underscore');
 
+var config = require('config');
+
 var b = require('b_').with('launcher');
 var Button = require('../button/Button.jsx');
 
@@ -375,24 +392,24 @@ var Launcher = React.createClass({displayName: "Launcher",
 
     render: function () {
         return (
-            React.createElement("div", {className: b({rules: this.state.rules})},
-                React.createElement("div", {className: b('main')},
-                    React.createElement("h1", {className: b('title')}, "А ты знаешь свой город?"),
-                    React.createElement("p", {className: b('info')}, "Эта игра проверит твое знание Москвы. Не забудь заглянуть в правила перед началом игры."),
-                    React.createElement("div", {className: b('footer')},
-                        React.createElement(Button, {theme: "play", content: "Играем!", onClick: this.props.handleClick}),
+            React.createElement("div", {className: b({rules: this.state.rules})}, 
+                React.createElement("div", {className: b('main')}, 
+                    React.createElement("h1", {className: b('title')}, "А ты знаешь свой город?"), 
+                    React.createElement("p", {className: b('info')}, "Эта игра проверит твое знание Москвы. Не забудь заглянуть в правила перед началом игры."), 
+                    React.createElement("div", {className: b('footer')}, 
+                        React.createElement(Button, {theme: "play", content: "Играем!", onClick: this.props.handleClick}), 
                         React.createElement(Button, {theme: "pseudo", content: "Правила", onClick: this.handleRules})
                     )
-                ),
-                React.createElement("div", {className: b('back')},
-                    React.createElement("h2", {className: b('title')}, "Правила игры"),
-                    React.createElement("p", {className: b('info')}, "Правила игры очень просты. Тебе необходимо за 2 минуты, найти как можно больше объектов на карте и кликнуть по ним."),
-                    React.createElement("ul", null,
-                        React.createElement("li", null, "За каждый объект ты будешь получать 100 очков."),
+                ), 
+                React.createElement("div", {className: b('back')}, 
+                    React.createElement("h2", {className: b('title')}, "Правила игры"), 
+                    React.createElement("p", {className: b('info')}, "Правила игры очень просты. Тебе необходимо за 3 минуты, найти как можно больше объектов на карте и кликнуть по ним."), 
+                    React.createElement("ul", null, 
+                        React.createElement("li", null, "За каждый объект ты будешь получать 100 очков."), 
                         React.createElement("li", null, "Ты можешь воспользоваться подсказкой, в левом нижнем углу, но она обойдется тебе в 250 очков.")
-                    ),
-                    React.createElement("p", null, "Объект который нужно найти - находится первым в списке в правом нижнем углу."),
-                    React.createElement("div", {className: b('footer')},
+                    ), 
+                    React.createElement("p", null, "Объект который нужно найти - находится первым в списке (правый нижний угл)."), 
+                    React.createElement("div", {className: b('footer')}, 
                         React.createElement(Button, {theme: "pseudo", arrow: "left", content: "Назад", onClick: this.handleBack})
                     )
                 )
@@ -418,7 +435,7 @@ var Launcher = React.createClass({displayName: "Launcher",
 module.exports = Launcher;
 
 
-},{"../button/Button.jsx":3,"b_":"b_","react":"react","underscore":"underscore"}],7:[function(require,module,exports){
+},{"../button/Button.jsx":3,"b_":"b_","config":"config","react":"react","underscore":"underscore"}],7:[function(require,module,exports){
 /** @jsx React.DOM */
 var React = require('react');
 var b = require('b_').with('list');
@@ -458,9 +475,9 @@ var List = React.createClass({displayName: "List",
 
     render: function () {
         return (
-            React.createElement("div", {className: b({hide: !this.state.geoObjects.length || this.props.disabled})},
-                React.createElement("div", {className: b('wrapper')},
-                    React.createElement("ul", {className: b('items')},
+            React.createElement("div", {className: b({hide: !this.state.geoObjects.length || this.props.disabled})}, 
+                React.createElement("div", {className: b('wrapper')}, 
+                    React.createElement("ul", {className: b('items')}, 
                         this.state.geoObjects.map(function (geo, index) {
                             return this._renderItem(geo, index);
                         }, this)
@@ -503,7 +520,7 @@ var Result = React.createClass({displayName: "Result",
 
     render: function () {
         return (
-            React.createElement("div", {className: b()},
+            React.createElement("div", {className: b()}, 
                 "Ваш результат: ", this.props.points
             )
         );
@@ -569,7 +586,7 @@ var Counter = React.createClass({displayName: "Counter",
 
     render: function () {
         return (
-            React.createElement("div", {className: b({disabled: this.props.disabled})},
+            React.createElement("div", {className: b({disabled: this.props.disabled})}, 
                 this._getUserTime()
             )
         );
@@ -655,7 +672,7 @@ _.extend(MyMap.prototype, {
                 geoObject.point,
                 // Радиус круга в метрах.
                 100 * geoObject.areaFactor
-            ], {}, {
+            ], {hintContent: geoObject.title}, {
                 fillColor: "#ffffff22",
                 // Ширина обводки в пикселях.
                 strokeWidth: 0
@@ -763,6 +780,11 @@ _.extend(MyMap.prototype, {
         this._removeHintOnTimeout(hintObject);
     },
 
+    /**
+     * Удалаяем подсказку спустя время
+     * @param hintObject
+     * @private
+     */
     _removeHintOnTimeout: function (hintObject) {
         var self = this;
 
@@ -781,26 +803,56 @@ module.exports = [
     {
         title: 'Кремлевский дворец',
         point: [55.75233, 37.617692],
-        areaFactor: 3
+        areaFactor: 2.4
     },
     {
         title: 'МГУ',
         point: [55.702987, 37.53093],
-        areaFactor: 2
+        areaFactor: 2.4
     },
     {
         title: 'Храм Христа Спасителя',
         point: [55.744566, 37.605499],
-        areaFactor: 0.8
+        areaFactor: 1
+    },
+    {
+        title: 'Манежная площадь',
+        point: [55.755778, 37.614868],
+        areaFactor: 1.2
+    },
+    {
+        title: 'Московский зоопарк',
+        point: [55.761117, 37.578352],
+        areaFactor: 2.2
+    },
+    {
+        title: 'Третьяковская галерея',
+        point: [55.741667, 37.620779],
+        areaFactor: 1
+    },
+    {
+        title: 'Казанский вокзал',
+        point: [55.773089, 37.656532],
+        areaFactor: 2
     },
     {
         title: 'Театральная площадь',
         point: [55.758772, 37.619414],
+        areaFactor: 1.4
+    },
+    {
+        title: 'памятник Петру I',
+        point: [55.791309, 37.763081],
         areaFactor: 2
     },
     {
-        title: 'Метро Текстильщики',
-        point: [55.708759, 37.733212],
+        title: 'Останкинская телебашня',
+        point: [55.821431, 37.614482],
+        areaFactor: 1
+    },
+    {
+        title: 'Большой театр',
+        point: [55.760109, 37.618578],
         areaFactor: 0.5
     },
     {
@@ -825,6 +877,7 @@ module.exports = [
 var dispatcher = require('../utils/dispatcher');
 var AppActions = require('../actions/AppActions');
 
+// Маленькая моделька - очки пользователя
 var store = {
     points: 0,
 
@@ -1136,19 +1189,23 @@ module.exports = {
     maps: {
         center: [55.76, 37.64], // Москва
         zoom: 15,
-        controls: [],
+        minZoom: 8,
+        controls: ['zoomControl'],
         behaviors: ['drag']
     },
 
-    // Цена за подсказку
+    // Подсказка
     hint: {
         price: -250, // point
         lifeTime: 5000, // ms
         countDown: 3000 // ms
     },
 
+    // Очки за верный ответ
     point: 100,
-    timer: 20 * 1000
+
+    // Время игры
+    timer: 3 * 60 * 1000
 };
 
 

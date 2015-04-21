@@ -2,7 +2,8 @@ module.exports = {
     maps: {
         center: [55.76, 37.64], // Москва
         zoom: 15,
-        controls: [],
+        minZoom: 8,
+        controls: ['zoomControl'],
         behaviors: ['drag']
     },
 
@@ -17,5 +18,5 @@ module.exports = {
     point: 100,
 
     // Время игры
-    timer: 2 * 60 * 1000
+    timer: 3 * 60 * 1000
 };

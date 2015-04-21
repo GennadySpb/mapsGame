@@ -58,7 +58,7 @@ _.extend(MyMap.prototype, {
                 geoObject.point,
                 // Радиус круга в метрах.
                 100 * geoObject.areaFactor
-            ], {}, {
+            ], {hintContent: geoObject.title}, {
                 fillColor: "#ffffff22",
                 // Ширина обводки в пикселях.
                 strokeWidth: 0

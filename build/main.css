@@ -159,43 +159,7 @@
   }
 }
 
-/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-@-moz-keyframes request {
-
-/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-  to {
-    transform: translate3d(100%, 0, 0) scale(0.99);
-  }
-}
-
-/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-@-webkit-keyframes request {
-
-/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-  to {
-    transform: translate3d(100%, 0, 0) scale(0.99);
-  }
-}
-
-/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-@-o-keyframes request {
-
-/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-  to {
-    transform: translate3d(100%, 0, 0) scale(0.99);
-  }
-}
-
-/* line 36 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-@keyframes request {
-
-/* line 37 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
-  to {
-    transform: translate3d(100%, 0, 0) scale(0.99);
-  }
-}
-
-/* line 40 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
+/* line 34 : /Users/twin/Sites/3dscheme/app/styles/animation.styl */
 
 /* line 1 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */
 
@@ -224,15 +188,13 @@ html {
   position: relative;
   z-index: 0;
   display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  vertical-align: top;
 }
 
-/* line 28 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
-
-/* line 29 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
+/* line 27 : /Users/twin/Sites/3dscheme/app/components/app/app.styl */
 
 /* line 1 : /Users/twin/Sites/3dscheme/app/components/button/_skin/button_skin_action.styl */
 
@@ -400,17 +362,17 @@ html {
   font-size: 20px;
   line-height: 40px;
   position: absolute;
-  left: 12px;
   bottom: 12px;
-  text-shadow: 0 1px 0 #fff;
+  left: 12px;
   width: 40px;
   height: 40px;
-  text-align: center;
-  background: #ffc800;
-  border-radius: 50%;
-  border: 1px solid #999;
   cursor: pointer;
   transition: all 1s;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background: #ffc800;
+  text-shadow: 0 1px 0 #fff;
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
@@ -418,16 +380,16 @@ html {
 /* line 24 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
 .hint:after {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: #fff;
   content: 'x';
   transform: rotateY(-180deg);
-  backface-visibility: hidden;
   border: 1px solid #999;
+  border-radius: 50%;
+  background: #fff;
+  backface-visibility: hidden;
 }
 
 /* line 42 : /Users/twin/Sites/3dscheme/app/components/hint/hint.styl */
@@ -447,16 +409,16 @@ html {
 /* line 1 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 300px;
   margin: 12px 0 0 200px;
   transition: all 1s;
-  transform-style: preserve-3d;
   opacity: 1;
+  transform-style: preserve-3d;
 }
 
-/* line 13 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 15 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher__title {
   font-size: 18px;
   margin: 0 0 12px 0;
@@ -464,38 +426,38 @@ html {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 21 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 24 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher__main,
 .launcher__back {
   position: absolute;
+  transform: translateZ(1px);
   backface-visibility: hidden;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
   background: #fff;
   box-sizing: border-box;
   padding: 12px;
-  transform: translateZ(1px);
 }
 
-/* line 31 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 35 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher__back {
   transform: translateZ(-1px) rotateY(-180deg);
 }
 
-/* line 35 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 39 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher__footer {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 40 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 45 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 .launcher_rules {
   transform: rotateY(180deg);
 }
 
-/* line 43 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
+/* line 48 : /Users/twin/Sites/3dscheme/app/components/launcher/launcher.styl */
 
-/* line 43 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 48 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 
 /* line 1 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list {
@@ -504,9 +466,9 @@ html {
   position: absolute;
   right: 12px;
   bottom: 24px;
-  opacity: 1;
   transition: all 0.3s ease-in;
   transform: translateY(0);
+  opacity: 1;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
   background: #fff;
@@ -514,25 +476,25 @@ html {
   padding: 12px;
 }
 
-/* line 13 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 14 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list__wrapper {
   position: relative;
-  max-height: 80px;
   overflow: hidden;
+  max-height: 80px;
 }
 
-/* line 19 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 21 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list__wrapper:after {
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  content: '';
   height: 60%;
+  content: '';
   background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 100%);
 }
 
-/* line 34 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 35 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list__items,
 .list__item {
   margin: 0;
@@ -540,30 +502,30 @@ html {
   list-style: none;
 }
 
-/* line 41 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 43 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list__item {
   height: 24px;
   white-space: nowrap;
-  text-overflow: ellipsis;
   color: #888;
   user-select: none;
+  text-overflow: ellipsis;
 }
 
-/* line 50 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 52 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list__item:first-child {
   font-weight: bold;
   color: #000;
 }
 
-/* line 57 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 60 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 .list_hide {
-  opacity: 0;
   transform: translateY(10px);
+  opacity: 0;
 }
 
-/* line 61 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
+/* line 67 : /Users/twin/Sites/3dscheme/app/components/list/list.styl */
 
-/* line 61 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
+/* line 67 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
 
 /* line 1 : /Users/twin/Sites/3dscheme/app/components/loader/loader.styl */
 .loader {
@@ -586,15 +548,15 @@ html {
   font-size: 28px;
   line-height: 360px;
   position: absolute;
-  left: 50%;
   top: 50%;
-  text-shadow: 0 1px 0 #fff;
+  left: 50%;
   width: 360px;
   height: 360px;
+  transform: translate(-50%, -50%);
+  text-align: center;
   border-radius: 50%;
   background: #fc0;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  text-shadow: 0 1px 0 #fff;
 }
 
 /* line 18 : /Users/twin/Sites/3dscheme/app/components/result/result.styl */
@@ -642,16 +604,16 @@ html {
   font-size: 16px;
   line-height: 50px;
   position: absolute;
-  left: 12px;
   top: 12px;
-  text-shadow: 0 1px 0 #fff;
+  left: 12px;
   width: 50px;
   height: 50px;
   text-align: center;
-  background: rgba(0,0,0,0.2);
-  border-radius: 50%;
-  box-shadow: 0 0 10px #fff;
   border: 1px solid #999;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px #fff;
+  text-shadow: 0 1px 0 #fff;
 }
 
 /* line 45 : /Users/twin/Sites/3dscheme/app/styles/mixin.styl */

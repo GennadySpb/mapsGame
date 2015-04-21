@@ -2,6 +2,8 @@
 var React = require('react');
 var _ = require('underscore');
 
+var config = require('config');
+
 var b = require('b_').with('launcher');
 var Button = require('../button/Button.jsx');
 
@@ -34,12 +36,12 @@ var Launcher = React.createClass({
                 </div>
                 <div className={b('back')}>
                     <h2 className={b('title')}>Правила игры</h2>
-                    <p className={b('info')}>Правила игры очень просты. Тебе необходимо за 2 минуты, найти как можно больше объектов на карте и кликнуть по ним.</p>
+                    <p className={b('info')}>Правила игры очень просты. Тебе необходимо за 3 минуты, найти как можно больше объектов на карте и кликнуть по ним.</p>
                     <ul>
                         <li>За каждый объект ты будешь получать 100 очков.</li>
                         <li>Ты можешь воспользоваться подсказкой, в левом нижнем углу, но она обойдется тебе в 250 очков.</li>
                     </ul>
-                    <p>Объект который нужно найти - находится первым в списке в правом нижнем углу.</p>
+                    <p>Объект который нужно найти - находится первым в списке (правый нижний угл).</p>
                     <div className={b('footer')}>
                         <Button theme="pseudo" arrow="left" content='Назад' onClick={this.handleBack}/>
                     </div>

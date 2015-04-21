@@ -1,20 +1,23 @@
 .launcher {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
 
     width: 300px;
     margin: 12px 0 0 200px;
 
     transition: all 1s;
-    transform-style: preserve-3d;
+
     opacity: 1;
+
+    transform-style: preserve-3d;
 
     &__title {
         font-size: 18px;
 
         margin: 0 0 12px 0;
         padding-bottom: 6px;
+
         border-bottom: 1px solid #ddd;
     }
 
@@ -22,10 +25,11 @@
     &__back {
         position: absolute;
 
+        transform: translateZ(1px);
+
         backface-visibility: hidden;
 
         island();
-        transform: translateZ(1px);
     }
 
     &__back {
@@ -34,6 +38,7 @@
 
     &__footer {
         display: flex;
+
         justify-content: space-between;
     }
 

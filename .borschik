@@ -1,8 +1,8 @@
 {
   "paths": {
-    "_": "//yastatic.net/taxi-teminal/_/"
+    "_": "/_/"
   },
   "freeze_paths": {
-    "./app/**": "./app/_/"
+    "./app/**": "./_/"
   }
 }

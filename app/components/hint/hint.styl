@@ -3,40 +3,40 @@
     line-height: 40px;
 
     position: absolute;
-    left: 12px;
     bottom: 12px;
-    text-shadow: 0 1px 0 #fff;
+    left: 12px;
 
     width: 40px;
     height: 40px;
 
-    text-align: center;
-    background: rgba(255,200,0, 1);
-    border-radius: 50%;
-    border: 1px solid #999;
-
     cursor: pointer;
-
     transition: all 1s;
+    text-align: center;
+
+    border: 1px solid #999;
+    border-radius: 50%;
+    background: rgba(255,200,0, 1);
+    text-shadow: 0 1px 0 #fff;
+
     transform-style: preserve-3d;
     backface-visibility: hidden;
 
     &:after {
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
+
         width: 40px;
         height: 40px;
 
+        content: 'x'
+        transform: rotateY(-180deg);
+
+        border: 1px solid #999;
         border-radius: 50%;
         background: #fff;
 
-        content: 'x'
-
-        transform: rotateY(-180deg);
         backface-visibility: hidden;
-
-        border: 1px solid #999;
     }
 
     &_actived {

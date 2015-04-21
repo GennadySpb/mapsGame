@@ -11,4 +11,4 @@ npm i
 grunt static
 ```
 
-open http://localhost:63342/mapsGame/app/index.html
+open http://localhost:63342/mapsGame/index.html

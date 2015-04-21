@@ -6,42 +6,44 @@
     right: 12px;
     bottom: 24px;
 
-    opacity: 1;
     transition: all .3s ease-in
     transform: translateY(0);
 
+    opacity: 1;
+
     &__wrapper {
         position: relative;
-        max-height: 80px;
 
         overflow: hidden;
 
+        max-height: 80px;
+
         &:after {
             position: absolute;
+            right: 0;
             bottom: 0;
             left: 0;
-            right: 0;
+
+            height: 60%;
 
             content: '';
 
-            height: 60%;
             background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
         }
     }
-
-    island();
 
     &__items,
     &__item {
         margin: 0;
         padding: 0;
+
         list-style: none;
     }
 
     &__item {
         height: 24px;
+
         white-space: nowrap;
-        text-overflow ellipsis;
 
         color: #888;
 
@@ -52,10 +54,14 @@
 
             color: #000;
         }
+        text-overflow ellipsis;
     }
 
     &_hide {
-        opacity: 0;
         transform: translateY(10px);
+
+        opacity: 0;
     }
+
+    island();
 }
