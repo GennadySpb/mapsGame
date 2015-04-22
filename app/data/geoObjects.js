@@ -40,9 +40,9 @@ module.exports = [
         areaFactor: 1.4
     },
     {
-        title: 'памятник Петру I',
-        point: [55.791309, 37.763081],
-        areaFactor: 2
+        title: 'памятник Петру I (крым-кая наб.)',
+        point: [55.738226, 37.608877],
+        areaFactor: 1
     },
     {
         title: 'Останкинская телебашня',
