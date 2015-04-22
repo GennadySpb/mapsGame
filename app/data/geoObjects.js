@@ -40,14 +40,14 @@ module.exports = [
         areaFactor: 1.4
     },
     {
-        title: 'памятник Петру I (крым-кая наб.)',
+        title: 'Памятник Петру I (крым-кая наб.)',
         point: [55.738226, 37.608877],
         areaFactor: 1
     },
     {
         title: 'Останкинская телебашня',
-        point: [55.821431, 37.614482],
-        areaFactor: 1
+        point: [55.819727, 37.611715],
+        areaFactor: 1.2
     },
     {
         title: 'Большой театр',
@@ -65,7 +65,7 @@ module.exports = [
         areaFactor: 2
     },
     {
-        title: 'озеро Мазуринское',
+        title: 'Озеро Мазуринское',
         point: [55.811912, 37.912381],
         areaFactor: 3
     }
