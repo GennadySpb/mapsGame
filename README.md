@@ -2,7 +2,7 @@
  
 ## Технологии
 - [Яндекс.Карты API](https://tech.yandex.ru/maps/)
-- [ReactJs](reactjs.org)
+- [ReactJs](https://facebook.github.io/react/)
 
 ## Сборка
 
