@@ -35,6 +35,11 @@ module.exports = [
         areaFactor: 2
     },
     {
+        title: 'Киевский вокзал',
+        point: [55.742904, 37.565767],
+        areaFactor: 2
+    },
+    {
         title: 'Театральная площадь',
         point: [55.758772, 37.619414],
         areaFactor: 1.4
@@ -60,8 +65,18 @@ module.exports = [
         areaFactor: 1
     },
     {
-        title: 'Аэропорт Внуково',
-        point: [55.60623, 37.28861],
+        title: 'Донской монастырь',
+        point: [55.714526, 37.602193],
+        areaFactor: 1.4
+    },
+    {
+        title: 'Аэропорт Внуково (Терм А)',
+        point: [55.605302, 37.286741],
+        areaFactor: 3
+    },
+    {
+        title: 'БЦ - Сервеная башня',
+        point: [55.747059, 37.536607],
         areaFactor: 2
     },
     {

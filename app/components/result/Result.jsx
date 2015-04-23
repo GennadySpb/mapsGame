@@ -2,6 +2,9 @@
 var React = require('react');
 var b = require('b_').with('result');
 
+var data = require('../../data/geoObjects');
+var config = require('config');
+
 /**
  * Счетчик отчков
  *
@@ -21,7 +24,7 @@ var Result = React.createClass({
     render: function () {
         return (
             <div className={b()}>
-                Ваш результат: {this.props.points}
+                Ваш результат: {this.props.points} из {data.length * config.point}
             </div>
         );
     }
